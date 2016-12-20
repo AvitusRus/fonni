@@ -1,0 +1,31 @@
+@mixin grid-padding {
+  padding-left:215px;
+  padding-right:215px;
+}
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin buttonHover() {
+
+  &:hover {
+    background: #ffffff;
+    color: $brand-green;
+  }
+}
+
+@mixin transition() {
+  transition-property: background, color;
+  transition-duration: .5s;
+}
+
+
+$brand-green: rgba(29, 222, 133, 1);
+$gray-background: #fffcf4;
+$titleColor: rgba(69, 69, 70, 0.94);
+$placeholder: #a8a7a3;
